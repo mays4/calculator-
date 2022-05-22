@@ -1,0 +1,83 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html body{
+  background-color: rgb(200, 176, 211);
+}
+.container{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  /* background-color: rgb(191, 136, 136); */
+
+  
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(7,1fr);
+  grid-template-areas: 
+  "display display display display"
+  "clear clear divide multiply"
+  "seven eight nine subtract"
+  "four five six add"
+  "one two three equals"
+  "zero zero decimal equals"
+
+
+}
+.pad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  cursor: pointer;
+  background-color: rgb(99, 96, 92);
+  border: 1px solid black;
+  font-size: 20px;
+}
+.pad:hover{
+  border: 1px solid  white;
+}
+#dis{
+  grid-area: display;
+  color: aliceblue;
+  background-color: black;
+  font-size: 20px;
+  text-align: right;
+}
+input{
+  width: 100%;
+  color: white;
+  background-color: black;
+  text-align: right;
+  padding: 5px 20px;
+
+}
+#clear{
+  grid-area: clear;
+}
+#zero{
+  grid-area:zero ;
+}
+#equals{
+  grid-area: equals;
+}
+.dark-gray{
+  background-color: rgb(72, 70, 70);
+}
+.red{
+  background-color: rgb(208, 94, 94);
+}
+.blue{
+  background-color: rgb(72, 138, 188);
+}
+.total{
+  padding:  5px 20px;
+  color: rgb(230, 169, 47);
+}
