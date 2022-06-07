@@ -19,7 +19,7 @@ const App = () => {
     let currentanswer =  answer;
     let currentflag = flag;
     let currentexpression = expression;
-    console.log("s",symbol)
+   
     switch(true){
       case symbol === "0" ||
        symbol === "1" ||
@@ -62,7 +62,7 @@ const App = () => {
        }
        break
        case symbol === "AC":
-        currentanswer="0"
+        currentanswer=" 0"
         currentexpression="0"
          currentflag=false
          setDecimal(false)
@@ -89,10 +89,10 @@ const App = () => {
     <div className="container">
       <div className="grid">
         <div id="dis">
-          <div id="display" type="text"  >{expression}</div>
+          <div id="display" type="text">{expression}</div>
           {/* <div  className="total">{answer}</div> */}
         </div >
-        <div onClick={allClear} className="pad red" id="clear"  > AC</div>
+        <div onClick={allClear} className="pad red" id="clear"> AC</div>
         {/* <div  className="pad red" id="clear"> C</div> */}
         <div onClick={()=> display("/")} className="pad" id="divide" > /</div>
         <div onClick={()=> display("*")} className="pad" id="multiply" >X</div>

@@ -5,7 +5,7 @@
   padding: 0;
 }
 html body{
-  background-color: rgb(200, 176, 211);
+  background-color: rgba(236, 186, 216, 0.903);
 }
 .container{
   display: flex;
@@ -50,13 +50,16 @@ html body{
   background-color: black;
   font-size: 20px;
   text-align: right;
+  padding: 10px;
+
 }
 input{
   width: 100%;
   color: white;
   background-color: black;
   text-align: right;
-  padding: 5px 20px;
+  
+  padding: 10px 20px;
 
 }
 #clear{
